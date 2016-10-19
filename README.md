@@ -19,8 +19,19 @@ XLS файлов на расшаренных ресурсах.
 Также можно предоставить доступ некоторым операторам к редактированию
 только отдельных полей таблицы.
 
-В планах для каждой строки записывать дату-время создания.
-По системной дате определять доступные для редактирования строки.
-Например, запереть для редактирования предыдущий день - шоб не попортили.
 
-Ещё планируется реализовать выгрузку в EXCEL.
+
+At this project is implemented cooperative simultaneous editing of tables by several operators instead of changes  shared XLS files.
+It is necessary to:
+-avoid loss of information due to glitches save files;
+
+-get away from the moronic system rights assignments on whole file in Windows
+Here is for each table only 4 types of rights:
+0 - forbidden,
+1 - View
+2 - Add, Edit, and Delete only their own lines,
+3 - Add, edit and delete any lines
+
+You can set the rights for each operator on each table.
+
+You can also grant access to some operators to edit only certain fields of the table.
