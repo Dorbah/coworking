@@ -1,5 +1,6 @@
 <?php
 	include_once 'procs.php';
+	
 	$module='edit_table'; # Модуль редактирования таблиц
 	$script_name='edit_table.php';
 	$dbg=FALSE;
